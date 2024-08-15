@@ -476,7 +476,7 @@ main { overflow-x: hidden; }
   max-width: 500px;
   width: 125%;
   margin-bottom: 30px;
-  height: 100px;
+  height: 50px;
 }
 
 :is(.hero-social-list, .scroll-down) { display: none; }
