@@ -6,6 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shakiru - Personal Portfolio</title>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+          emailjs.init({
+              publicKey: "PwjWEyzsITsYXzOXy",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // these IDs from the previous steps
+              emailjs.sendForm('service_ft5wh96', 'contact-form', this)
+                  .then(() => {
+                      console.log('SUCCESS!');
+                  }, (error) => {
+                      console.log('FAILED to send. Check your Internet!', error);
+                  });
+          });
+      }
+  </script>
 
   <!-- 
     - favicon
