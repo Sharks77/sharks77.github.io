@@ -19,7 +19,7 @@
           document.getElementById('contact-form').addEventListener('submit', function(event) {
               event.preventDefault();
               // these IDs from the previous steps
-              emailjs.sendForm('service_ft5wh96', 'contact-form', this)
+              emailjs.sendForm('service_ft5wh96', 'template_7fut9k7', this)
                   .then(() => {
                       console.log('SUCCESS!');
                   }, (error) => {
@@ -126,9 +126,9 @@
         <figure class="hero-banner">
 
           <picture>
-            <source srcset="./assets/images/sharks.png" media="(min-width: 768px)">
-            <source srcset="./assets/images/sharks.png" media="(min-width: 500px)">
-            <img src="./assets/images/sharks.png" alt="Cool graphic"
+            <source srcset="./assets/images/PowerClip Rectangle.png" media="(min-width: 768px)">
+            <source srcset="./assets/images/PowerClip Rectangle.png" media="(min-width: 500px)">
+            <img src="./assets/images/PowerClip Rectangle.png" alt="Cool graphic"
               class="w-100">
           </picture>
 
@@ -658,7 +658,7 @@
 
         </div>
 
-        <form action="" class="contact-form">
+        <form id="contact-form" action="" class="contact-form">
 
           <div class="form-wrapper">
 
