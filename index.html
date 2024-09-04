@@ -20,6 +20,8 @@
               emailjs.sendForm('service_ft5wh96', 'template_sg55spf', this)
                   .then(() => {
                       console.log('SUCCESS!');
+                      this.reset();
+                      alert('Your message has been sent successfully!');
                   }, (error) => {
                       console.log('FAILED to send. Check your Internet!', error);
                   });
